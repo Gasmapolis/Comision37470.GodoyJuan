@@ -1,6 +1,6 @@
 let dia = 1
 
-while (dia <=8 ){
+while (dia !== "ESC"){
     dia = parseInt(prompt("Ingrese que dia es hoy (ESC para Salir) \n 1.Lunes \n 2.Martes \n 3.Miercoles \n 4.Jueves \n 5.Viernes \n 6.Sabado \n 7.Domingo "))
     if (dia === 1) {
         alert('Arriba hay que trabajar hoy es LUNES!!')
@@ -22,5 +22,7 @@ while (dia <=8 ){
     }
     if (dia === 7){ 
         alert('Hoy es Domingo, tomate un descanso.')
-    } dia++
+    }if (dia >= 8){
+        alert("El numero ingresado no es valido")
+    }
 }
